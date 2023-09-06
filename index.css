@@ -1,0 +1,43 @@
+.section{
+    background-color: pink;
+    margin: 20px;
+    padding: 10px;
+}
+
+#aboutme, #contactme{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+#aboutme_picture_placeholder, #project_image_placeholder, #contactme_picture_placeholder{
+    background-color: aqua;
+    max-width: 100%;
+    height: auto;
+    margin:10px;
+    padding:10px;
+
+}
+
+
+#my_project_grid{
+    display: grid;
+    justify-content: center;  
+    grid-template-columns: repeat(3, 1fr);  
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 15px;
+    padding:10px;
+}
+
+.project, #aboutme_text{
+    display:flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+#project_text{
+    background-color: blueviolet;
+    margin-top: 10px;
+}
