@@ -1,19 +1,29 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
 .section{
     background-color: pink;
-    margin: 20px;
+    margin: 20px auto;
     padding: 10px;
+    max-width:1000px;
 }
 
 #aboutme, #contactme{
  display: flex;
- justify-content: center;
+ justify-content: space-around;
  align-items: center;
+ 
 }
 
 #aboutme_picture_placeholder, #project_image_placeholder, #contactme_picture_placeholder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background-color: aqua;
-    max-width: 100%;
-    height: auto;
+    min-width: 100px;
+    min-height:100px;
     margin:10px;
     padding:10px;
 
@@ -30,14 +40,51 @@
     padding:10px;
 }
 
-.project, #aboutme_text{
+.project, #aboutme_text, #contactme_text{
     display:flex;
     flex-direction: column;
     background-color: aquamarine;
     padding: 10px;
 }
 
-#project_text{
+#project_text, #contact_details{
     background-color: blueviolet;
     margin-top: 10px;
+    padding:10px;
+}
+
+@media (max-width:300px) {
+    #aboutme, #contactme{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
+       }
+    #my_project_grid{
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 10px;
+        row-gap: 15px;
+        padding:10px;
+    }
+}
+
+@media (min-width:300px) and (max-width:500px) {
+    #aboutme, #contactme{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
+       }
+    #my_project_grid{
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+        row-gap: 15px;
+        padding:10px;
+    }
 }
