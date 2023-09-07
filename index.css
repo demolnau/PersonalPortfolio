@@ -1,9 +1,11 @@
 body{
     padding: 0px;
     margin: 0px;
+    font-family: 'Lora', serif;
+    background-color: #f1eaea;
 }
 .section{
-    background-color: pink;
+    background-color: #f0d0ce;
     margin: 20px auto;
     padding: 10px;
     max-width:1000px;
@@ -21,14 +23,12 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: aqua;
+    background-color: #dbb0b2;
     min-width: 100px;
     min-height:100px;
     margin:10px;
     padding:10px;
-
 }
-
 
 #my_project_grid{
     display: grid;
@@ -43,17 +43,25 @@ body{
 .project, #aboutme_text, #contactme_text{
     display:flex;
     flex-direction: column;
-    background-color: aquamarine;
+    background-color: #9a7e8b;
     padding: 10px;
 }
 
-#project_text, #contact_details{
-    background-color: blueviolet;
+#project_text, #contact_details, #aboutme_description{
+    background-color: #bcc7c1;
     margin-top: 10px;
     padding:10px;
 }
+#detail{
+    display:flex;
+    align-items: center;
+}
 
-@media (max-width:300px) {
+.material-icons{
+    padding-right: 10px;
+}
+
+@media (max-width:400px) {
     #aboutme, #contactme{
         display: flex;
         flex-direction: column;
@@ -71,7 +79,7 @@ body{
     }
 }
 
-@media (min-width:300px) and (max-width:500px) {
+@media (min-width:400px) and (max-width:600px) {
     #aboutme, #contactme{
         display: flex;
         flex-direction: column;
